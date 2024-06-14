@@ -2,44 +2,60 @@
   box-sizing: border-box;
 }
 
+:root {
+  --header-color: rgb(178, 68, 180);
+  --background-color: rgb(49, 49, 49);
+  --main-text-color: white;
+}
+
 body {
   background-color: var(--background-color);
 }
 
-:root {
-  --header-color: rgb(149, 56, 150);
-  --background-color: rgb(90, 88, 88);
-  --main-text-color: white;
-}
-
 header {
   text-align: center;
+  font-size: 110%;
   color: var(--main-text-color);
-  margin: 0 100px 15px 100px;
+  margin: 0 100px 40px 100px;
 }
 
 h1 {
   color: var(--header-color);
-  font-size: 200%;
+  font-size: 300%;
   margin: 15px;
 }
 
 main {
   display: flex;
-
-
+  flex-direction: row;
   flex-wrap: wrap;
-
-
 }
 
 .card {
-  flex: 1 1 calc(33.33% - 10px);
-  border-style: dotted;
+  flex: 1 1 calc(33.33% - 30px);
+  border-style: dashed;
   border-width: 2px;
   border-color: var(--main-text-color);
   padding: 10px;
-  margin: 5px;
+  margin: 20px 15px 20px 15px;
+}
+
+section p {
+  color: var(--header-color);
+  position: relative;
+  top: 30px:
+}
+
+pre {
+  color: var(--main-text-color);
+  font-family: monospace;
+  text-align: left;
+  border-radius: 8px;
+  padding: 8px 0 8px;
+  background: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 103, 236, 0.6) 100%
+  );
 }
 
 h2 {
@@ -51,9 +67,13 @@ h2 {
   padding: 10px;
   margin: 5px;
   position: relative;
-  top: -30px;
+  top: -35px;
   background-color: var(--background-color);
   border-radius: 10px;
+}
+
+footer {
+  padding: 30px;
 }
 
 h3 {
