@@ -2,6 +2,66 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
+:root {
+  --header-color: rgb(149, 56, 150);
+  --background-color: rgb(90, 88, 88);
+  --main-text-color: white;
+}
+
+header {
+  text-align: center;
+  color: var(--main-text-color);
+  margin: 0 100px 15px 100px;
+}
+
+h1 {
+  color: var(--header-color);
+  font-size: 200%;
+  margin: 15px;
+}
+
+main {
+  display: flex;
+
+
+  flex-wrap: wrap;
+
+
+}
+
+.card {
+  flex: 1 1 calc(33.33% - 10px);
+  border-style: dotted;
+  border-width: 2px;
+  border-color: var(--main-text-color);
+  padding: 10px;
+  margin: 5px;
+}
+
+h2 {
+  color: var(--header-color);
+  font-size: 150%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--main-text-color);
+  padding: 10px;
+  margin: 5px;
+  position: relative;
+  top: -30px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+}
+
+h3 {
+  color: var(--header-color);
+  font-size: 100%;
+  text-align: center;
+}
+
 /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
   .card {
